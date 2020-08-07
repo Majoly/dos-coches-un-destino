@@ -1,21 +1,38 @@
 <xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="Nk1_/?CaNtT)Dnw*+qj+">mySprite</variable><variable id="%xw]p9xIjA-u0J(Qg,UT">mySprite2</variable><variable type="KIND_SpriteKind" id=")%*,3m]D5b)cS(w(GL9U">Player</variable><variable type="KIND_SpriteKind" id="c|H6#zNJElOj{pT~{kz|">Projectile</variable><variable type="KIND_SpriteKind" id="SdTWvp*[R`wwvjF!alN?">Food</variable><variable type="KIND_SpriteKind" id="[ee-5O@?A[{ELA`f3uUx">Enemy</variable></variables><block type="pxt-on-start" id="Xmn^oy4X#,7S~69IJm=:" x="0" y="0"><statement name="HANDLER"><block type="game_dialog_set_cursor" id="?i~daBR06l$vHB4r^z]*"><value name="frame"><shadow type="screen_image_picker" id="zfvfVj/*VoWqhOy;E)`K"><field name="img">img`
 . . . . . . . . . . . . . . . . 
-. . . . . . 9 9 9 9 9 9 . . . . 
-. . . . . 9 9 9 9 9 9 9 9 . . . 
-. . . . . c 9 9 9 9 9 9 c . . . 
-. . . . 6 c 9 9 9 9 9 9 c 6 . . 
-. . . 2 6 c 9 9 9 9 9 9 c 6 2 . 
-. . . f 6 c 9 9 9 9 9 9 c 6 f . 
-. . . f 8 c 9 9 9 9 9 9 c 8 f . 
-. . . f 6 c 9 b b b b 9 c 6 f . 
-. . . 2 6 6 b c c c c b 6 6 2 . 
-. . . 2 2 b c c c c c c b 2 2 . 
-. . . f 2 9 9 9 9 9 9 9 9 2 f . 
-. . . f 2 d 2 2 2 2 2 2 d 2 f . 
-. . . . 6 d d 2 2 2 2 d d 6 f . 
-. . . . f 6 d 2 2 2 2 d 6 f . . 
-. . . . . 8 2 2 2 2 2 2 8 . . . 
-`</field></shadow></value><next><block type="gameSplash" id="f%fu$L569k#rrFEy;`Qr"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><value name="title"><shadow type="text" id="D#{~iF;=/2uO9u~_W|]}"><field name="TEXT">Dos coches UN DESTINO</field></shadow></value><value name="subtitle"><shadow type="text" id="RwA4Ff0YsZVQ:GR`;7n_"><field name="TEXT">Autor:Mario BANEGAS I</field></shadow></value><next><block type="game_show_long_text" id="_ZD9Kb7CeM0GTqNFLq5;"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text" id="zCFQ0[kmBcX~~*ZuW4(f"><field name="TEXT">En este mini videojuego  tendras dos coches uno rojo y uno azul si tocas la lava pierdes si aprietas el botón b aparezce el rojo y el A el azul tienes que usar tu inteligiencia y por último no puedes tocar el boton A y B dos veces</field></shadow></value><next><block type="gameSplash" id="eb+}(Wpq9xrf$N39ZeL;"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="title"><block type="gameaskforstring" id="g}~}}!%VZU9(P($oq8Gu"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="message"><shadow type="text" id="=^Bo872%lV`q9Q6LEZaE"><field name="TEXT">Como te llamas</field></shadow></value></block></value><next><block type="tilemap_editor" id="vH52;-*fV4H}KIf-U44l"><field name="tilemap">tiles.createTilemap(hex`320010000202020202020202020202020301010101010101010101010101010101010101010102030302030303020203020303020302020203030202020302030203030103030303030301010101010101010101010101010101010101010101010101010101010402020101010101010101010103010303010101030303030303020303030303030303030301010303010303010301030103010203010303030303030303010301030301030103010101010302030101010101010302020202020202020202020202020202020201030202030303030301030103030103010301030301030203010303010101030303030303030303030303030303030302020102020203010101030103010303010301030101030102020201010301010101010101010101010101010101010101030203010302020201030103010301030301030103010103010302030101030101010101010101030302030303030303010103020201030202030103010301030101010103010301010301030203010103010101010103020202010202020202020301010302030103020202010301030103030303030301030101030103030301010301010101010303030303020303030303030101030202010202020301030103010101010101010103010103010101010101030101010101010101010101010101010101010103020201030303030103010303030303030303030101010303030303030303010103030303030303030203030303030301010302030101010101010301010101010101010101010101010101010101010303030302020202020202020202020202030101030303030303030303030303030303030303030303030303030303030303030303030303030303030302030303030303010103010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010301010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303`, img`
+. . . . . . 6 6 6 6 6 6 . . . . 
+. . . . . 6 6 9 9 6 6 6 6 . . . 
+. . . . . c 9 6 6 6 6 6 c . . . 
+. . . . 6 c 9 6 6 6 6 6 c 6 . . 
+. . . 8 6 c 9 6 6 6 6 6 c 6 8 . 
+. . . f 6 c 9 6 6 6 6 6 c 6 f . 
+. . . f 8 c 6 6 6 6 6 6 c 8 f . 
+. . . f 6 c 6 b b b b 6 c 6 f . 
+. . . 8 6 6 b c c c c b 6 6 8 . 
+. . . 8 8 b c c c c c c b 8 8 . 
+. . . f 8 9 9 9 9 9 9 9 9 8 f . 
+. . . f 8 d 6 6 6 6 6 6 d 8 f . 
+. . . . 6 d d 6 6 6 6 d d 6 f . 
+. . . . f 6 d 6 6 6 6 d 6 f . . 
+. . . . . 8 6 6 6 6 6 6 8 . . . 
+`</field></shadow></value><next><block type="gameSplash" id="f%fu$L569k#rrFEy;`Qr"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><value name="title"><shadow type="text" id="D#{~iF;=/2uO9u~_W|]}"><field name="TEXT">Dos coches UN DESTINO</field></shadow></value><value name="subtitle"><shadow type="text" id="RwA4Ff0YsZVQ:GR`;7n_"><field name="TEXT">Autor:Mario BANEGAS I Años:9 nacimiento 2010</field></shadow></value><next><block type="game_show_long_text" id="_ZD9Kb7CeM0GTqNFLq5;"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text" id="zCFQ0[kmBcX~~*ZuW4(f"><field name="TEXT">En este mini videojuego  tendras dos coches uno rojo y uno azul si tocas la lava pierdes si aprietas el botón b aparezce el rojo y el A el azul tienes que usar tu inteligiencia y por último no puedes tocar el boton A y B dos veces</field></shadow></value><next><block type="game_dialog_set_cursor" id=".;F71rU$Xvi}AVSuA^Zm"><value name="frame"><shadow type="screen_image_picker" id="~fw-de,@)^96?o6;Z`g|"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . 6 6 6 6 6 6 . . . . 
+. . . . . 6 6 9 9 6 6 6 6 . . . 
+. . . . . c 9 6 6 6 6 6 c . . . 
+. . . . 6 c 9 6 6 6 6 6 c 6 . . 
+. . . 8 6 c 9 6 6 6 6 6 c 6 8 . 
+. . . f 6 c 9 6 6 6 6 6 c 6 f . 
+. . . f 8 c 6 6 6 6 6 6 c 8 f . 
+. . . f 6 c 6 b b b b 6 c 6 f . 
+. . . 8 6 6 b c c c c b 6 6 8 . 
+. . . 8 8 b c c c c c c b 8 8 . 
+. . . f 8 9 9 9 9 9 9 9 9 8 f . 
+. . . f 8 d 6 6 6 6 6 6 d 8 f . 
+. . . . 6 d d 6 6 6 6 d d 6 f . 
+. . . . f 6 d 6 6 6 6 d 6 f . . 
+. . . . . 8 6 6 6 6 6 6 8 . . . 
+`</field></shadow></value><next><block type="gameSplash" id="eb+}(Wpq9xrf$N39ZeL;"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="title"><block type="gameaskforstring" id="g}~}}!%VZU9(P($oq8Gu"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="message"><shadow type="text" id="=^Bo872%lV`q9Q6LEZaE"><field name="TEXT">Como te llamas</field></shadow></value></block></value><next><block type="tilemap_editor" id="vH52;-*fV4H}KIf-U44l"><field name="tilemap">tiles.createTilemap(hex`320010000202020202020202020202020301010101010101010101010101010101010101010102030302030303020203020303020302020203030202020302030203030103030303030301010101010101010101010101010101010101010101010101010101010402020101010101010101010103010303010101030303030303020303030303030303030301010303010303010301030103010203010303030303030303010301030301030103010101010302030101010101010302020202020202020202020202020202020201030202030303030301030103030103010301030301030203010303010101030303030303030303030303030303030302020102020203010101030103010303010301030101030102020201010301010101010101010101010101010101010101030203010302020201030103010301030301030103010103010302030101030101010101010101030302030303030303010103020201030202030103010301030101010103010301010301030203010103010101010103020202010202020202020301010302030103020202010301030103030303030301030101030103030301010301010101010303030303020303030303030101030202010202020301030103010101010101010103010103010101010101030101010101010101010101010101010101010103020201030303030103010303030303030303030101010303030303030303010103030303030303030203030303030301010302030101010101010301010101010101010101010101010101010101010303030302020202020202020202020202030101030303030303030303030303030303030303030303030303030303030303030303030303030303030302030303030303010103010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010301010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303`, img`
 . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . 2 2 . 2 2 2 . . 2 . 2 2 . 2 . 
 . . 2 2 . . . 2 . 2 . 2 2 . 2 2 2 2 2 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . 2 . 2 2 . . . 2 2 2 2 2 2 . 2 2 2 2 2 2 2 2 2 2 . . 2 2 . 2 2 . 2 . 2 . 2 . 
@@ -32,7 +49,7 @@
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 
 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-`, [myTiles.transparency16,myTiles.tile2,myTiles.tile1,myTiles.tile3,myTiles.tile4], TileScale.Sixteen)</field></block></next></block></next></block></next></block></next></block></statement></block><block type="keyonevent" id="*YhuNz[HA)i|pG/Icv0)" x="0" y="393"><field name="button">controller.B</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="variables_set" id="W@11DAUav|W2]w^B%_9z"><field name="VAR" id="Nk1_/?CaNtT)Dnw*+qj+">mySprite</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="Nq$H9w!=;#(X,$JPRQXX"><value name="img"><shadow type="screen_image_picker" id="[+kI$pv`}fYGM~N1_O7K"><field name="img">img`
+`, [myTiles.transparency16,myTiles.tile2,myTiles.tile1,myTiles.tile3,myTiles.tile4], TileScale.Sixteen)</field></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="keyonevent" id="*YhuNz[HA)i|pG/Icv0)" x="0" y="393"><field name="button">controller.B</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="variables_set" id="W@11DAUav|W2]w^B%_9z"><field name="VAR" id="Nk1_/?CaNtT)Dnw*+qj+">mySprite</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="Nq$H9w!=;#(X,$JPRQXX"><value name="img"><shadow type="screen_image_picker" id="[+kI$pv`}fYGM~N1_O7K"><field name="img">img`
 . . . . . . . . . . . . . . . . 
 . . . . 2 2 2 2 2 2 2 2 . . . . 
 . . . 2 4 2 2 2 2 2 2 c 2 . . . 
