@@ -71,6 +71,7 @@ game.setDialogCursor(img`
     . . . . . 8 6 6 6 6 6 6 8 . . . 
     `)
 game.splash("Dos coches UN DESTINO", "Autor:Mario BANEGAS I  nacimiento:2010")
+game.splash("NACIMIENTO:2010", "Juego hecho en:2010")
 game.showLongText("En este mini videojuego  tendras dos coches uno rojo y uno azul si tocas la lava pierdes si aprietas el botón b aparezce el rojo y el A el azul tienes que usar tu inteligiencia y por último no puedes tocar el boton A y B dos veces", DialogLayout.Bottom)
 game.setDialogCursor(img`
     . . . . . . . . . . . . . . . . 
